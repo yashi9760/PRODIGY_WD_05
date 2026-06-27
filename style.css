@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+    background:
+    linear-gradient(
+    135deg,
+    #0f2027,
+    #203a43,
+    #2c5364
+    );
+
+    color:white;
+
+}
+
+
+
+.container{
+
+    width:420px;
+
+    padding:30px;
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(255,255,255,0.15);
+
+
+    backdrop-filter:blur(15px);
+
+
+    box-shadow:
+    0 25px 45px rgba(0,0,0,.4);
+
+
+    text-align:center;
+
+}
+
+
+
+h1{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.search-box{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+input{
+
+    flex:1;
+
+    padding:14px;
+
+    border-radius:30px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+
+
+button{
+
+
+    padding:14px 20px;
+
+    border:none;
+
+    border-radius:30px;
+
+
+    background:#00e5ff;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+
+.weather-card{
+
+    margin-top:30px;
+
+
+    animation:fade .8s;
+
+
+}
+
+
+
+#icon{
+
+    width:120px;
+
+}
+
+
+
+#temperature{
+
+    font-size:55px;
+
+}
+
+
+
+.details{
+
+
+    margin-top:25px;
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+
+}
+
+
+
+.details div{
+
+    background:
+
+    rgba(255,255,255,.2);
+
+
+    padding:15px;
+
+    border-radius:15px;
+
+    width:30%;
+
+
+}
+
+
+
+@keyframes fade{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+@media(max-width:500px){
+
+.container{
+
+width:90%;
+
+}
+
+
+.details{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+.details div{
+
+width:100%;
+
+}
+
+}
